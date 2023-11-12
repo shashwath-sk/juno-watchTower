@@ -1,0 +1,195 @@
+{
+    "deleted_account":["shashukarkera01@gmail.com"],
+    "pending":{
+        "Pending_details": [ 
+            { "name": "User", "canBeSorted": false },
+            { "name": "Risk level", "canBeSorted": true },
+            { "name": "Trigger reason", "canBeSorted": false },
+            { "name": "In queue for", "canBeSorted": true },
+            { "name": "Data added on", "canBeSorted": true },
+            { "name": "Previousy reviewed", "canBeSorted": false }
+        ],
+
+        "pending_issues": {
+            "0": {
+                "User": {
+                    "name":"Sam Altman",
+                    "email":"samaltman123@gmail.com"
+                },
+                "Risk level": "Medium",
+                "Trigger reason":"IP Change",
+                "In queue for":"4",
+                "Data added on":"12 Oct, 2023",
+                "Previousy reviewed":{
+                    "isReviewed": "Yes",
+                    "reviewedOn": "23 Aug, 2023"
+                }
+            },
+            "1": {
+                "User": {
+                    "name":"Sam Altman",
+                    "email":"shashukarkera01@gmail.com"
+                },
+                "Risk level": "High",
+                "Trigger reason":"FIFO",
+                "In queue for":"4",
+                "Data added on":"12 Oct, 2023",
+                "Previousy reviewed":{
+                    "isReviewed": "No"
+                }
+            },
+            "2": {
+                "User": {
+                    "name":"Sam Altman",
+                    "email":"samaltman123@gmail.com"
+                },
+                "Risk level": "Low",
+                "Trigger reason":"IP Change",
+                "In queue for":"5",
+                "Data added on":"12 Oct, 2023",
+                "Previousy reviewed":{
+                    "isReviewed": "No"
+                }
+            },
+            "3": {
+                "User": {
+                    "name":"Samy",
+                    "email":"samaltman123@gmail.com"
+                },
+                "Risk level": "High",
+                "Trigger reason":"FIFO",
+                "In queue for":"5",
+                "Data added on":"12 Oct, 2023",
+                "Previousy reviewed":{
+                    "isReviewed": "No"
+                }
+            },
+            "4": {
+                "User": {
+                    "name":"Sam Altman",
+                    "email":"samaltman123@gmail.com"
+                },
+                "Risk level": "Low",
+                "Trigger reason":"FIFO",
+                "In queue for":"5",
+                "Data added on":"12 Oct, 2023",
+                "Previousy reviewed":{
+                    "isReviewed": "Yes",
+                    "reviewedOn": "23 Aug, 2023"
+                }
+            },
+            "5": {
+                "User": {
+                    "name":"Sam Altman",
+                    "email":"samaltman123@gmail.com"
+                },
+                "Risk level": "Low",
+                "Trigger reason":"FIFO",
+                "In queue for":"5",
+                "Data added on":"12 Oct, 2023",
+                "Previousy reviewed":{
+                    "isReviewed": "Yes",
+                    "reviewedOn": "23 Aug, 2023"
+                }
+            }
+        }
+    },
+
+    "completed":{
+        "Completed_details": [ 
+            { "name": "User", "canBeSorted": false },
+            { "name": "Risk level", "canBeSorted": true },
+            { "name": "Action reason", "canBeSorted": false },
+            { "name": "Time to close", "canBeSorted": true },
+            { "name": "Data added on", "canBeSorted": true },
+            { "name": "Action taken by", "canBeSorted": false }
+        ],
+
+        "completed_issues": {
+            "0": {
+                "User": {
+                    "name":"Sam Altman",
+                    "email":"shashukar01@gmail.com"
+                },
+                "Risk level": "Medium",
+                "Action reason":"Flagged",
+                "Time to close":"14",
+                "Data added on":"12 Oct, 2023",
+                "Action taken by":{
+                    "name":"shash",
+                    "email":"shash@onjuno.com"
+                }
+            },
+            "1": {
+                "User": {
+                    "name":"Sam Altman",
+                    "email":"samaltman123@gmail.com"
+                },
+                "Risk level": "High",
+                "Action reason":"Cleared",
+                "Time to close":"14",
+                "Data added on":"12 Oct, 2023",
+                "Action taken by":{
+                    "name":"shash",
+                    "email":"shash@onjuno.com"
+                }
+            },
+            "2": {
+                "User": {
+                    "name":"Sam Altman",
+                    "email":"samaltman123@gmail.com"
+                },
+                "Risk level": "Low",
+                "Action reason":"Cleared",
+                "Time to close":"15",
+                "Data added on":"12 Oct, 2023",
+                "Action taken by":{
+                    "name":"shash",
+                    "email":"shash@onjuno.com"
+                }
+            },
+            "3": {
+                "User": {
+                    "name":"Sam Altman",
+                    "email":"samaltman123@gmail.com"
+                },
+                "Risk level": "High",
+                "Action reason":"SOI requested",
+                "Time to close":"15",
+                "Data added on":"12 Oct, 2023",
+                "Action taken by":{
+                    "name":"shash",
+                    "email":"shash@onjuno.com"
+                }
+            },
+            "4": {
+                "User": {
+                    "name":"Sam Altman",
+                    "email":"samaltman123@gmail.com"
+                },
+                "Risk level": "Low",
+                "Action reason":"Flagged",
+                "Time to close":"15",
+                "Data added on":"12 Oct, 2023",
+                "Action taken by":{
+                    "name":"shash",
+                    "email":"shash@onjuno.com"
+                }
+            },
+            "5": {
+                "User": {
+                    "name":"Sam Altman",
+                    "email":"samaltman123@gmail.com"
+                },
+                "Risk level": "Low",
+                "Action reason":"Closed",
+                "Time to close":"15",
+                "Data added on":"12 Oct, 2023",
+                "Action taken by":{
+                    "name":"shash",
+                    "email":"shash@onjuno.com"
+                }
+            }
+        }
+    }
+}
