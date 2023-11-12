@@ -11,7 +11,7 @@ const Monitor = () => {
     const [issueDetails,setIssueDetails] = useState(null);
     const [filteredIssues,setFilteredIssues] = useState(null);
     const [issues, setIssues] = useState(null);
-    const[ deletedAccounts, setDeletedAccounts] = useState(null);
+    const[ deletedAccounts, setDeletedAccounts] = useState([]);
 
 
     const [selectedTriggerReason, setSelectedTriggerReason] = useState(null);
@@ -29,23 +29,22 @@ const Monitor = () => {
             details = getFromLocalStorage("Pending_details");
             isssues = getFromLocalStorage("Pending_issues")
             if(details==null ||isssues==null){
-              console.log("not set");
               details =  getData.pendingDetails();
               isssues =  getData.pendingIssues();
-              isssues = filterIssues(isssues);
               setToLocalStorage("Pending_details",details);
               setToLocalStorage("Pending_issues",isssues);
             }
+            isssues = filterIssues(isssues);
           } else if (issueStatus === "Completed") {
             details = getFromLocalStorage("Completed_details");
             isssues = getFromLocalStorage("Completed_issues")
            if(details==null ||isssues==null){
               details =  getData.completedDetails();
               isssues =  getData.completedIssues();
-              isssues = filterIssues(isssues);
               setToLocalStorage("Completed_details",details);
               setToLocalStorage("Completed_issues",isssues);
             }
+            isssues = filterIssues(isssues);
           }
           setIssues(isssues);
           setIssueDetails(details);
@@ -57,8 +56,7 @@ const Monitor = () => {
       const filterIssues = (isuesData)=>{
         let deletedAccounts = getFromLocalStorage("deleted_accounts");
         if(deletedAccounts==null){
-          deletedAccounts = getData.deletedAccount();
-          console.log(deletedAccounts,"deletedAccounts");
+          deletedAccounts = getData.deletedAccount() ||[];
           setToLocalStorage("deleted_accounts",deletedAccounts);
           setDeletedAccounts(deletedAccounts);
         }
@@ -132,7 +130,6 @@ const Monitor = () => {
     };
 
     const handleStatusClick = (status) => {
-      console.log(status,"status");
       setIssueStatus(status);
     };
 
