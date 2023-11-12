@@ -43,7 +43,6 @@ const Table = ({issueDetails,issues, handleIsReviewed, sortIssues} ) => {
               </th>
             ))}
           </tr>
-          {issues&&console.log(issues)}
         </thead>
         <tbody>
           {issues && Object.values(issues).map((issue, index) => (

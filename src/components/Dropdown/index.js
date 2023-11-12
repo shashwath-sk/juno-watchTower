@@ -4,9 +4,6 @@ import React, {useState} from 'react';
 import './index.css';
 
 const Dropdown = ({ options, onSelect, display }) => {
-  
-
-  console.log(options,"options");
 
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -19,7 +16,6 @@ const Dropdown = ({ options, onSelect, display }) => {
         <div className="dropdown-content">
           {options.map((option, index) => (
             <div key={index} onClick={() => onSelect(option)}>
-                {console.log(option,index,"index")}
               {option}
             </div>
           ))}
