@@ -1,0 +1,87 @@
+.viewbar-container{
+    background-color: #ffffff;
+    margin:50px 20px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.viewbar-header{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 18px;
+    padding-bottom: 30px;
+}
+.logo-here{
+    font-size: 30px;
+    color: #d6d6d6;
+    padding: 5px 0px 5px 0px;
+}
+.viewbar-features{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.viewbar-feature{
+    color: #7d7c7c;
+    font-size: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.viewbar-feature:hover {
+    background-color: #ededfe; 
+    color: #5856f0;
+    border-radius: 10%;
+}
+.viewbar-feature.active {
+    background-color: #ededfe; 
+    color: #5856f0;
+    border-radius: 10%;
+  }
+.gray-line{
+    height: 3px;
+    background-color: #e9e9e9;
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.straight-gray-line{
+    height: 100vh;
+    background-color: #e9e9e9;
+    width: 3px;
+}
+.user-container {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+.user-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px; 
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column!important;
+}
+
+.username {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.email {
+    font-size: 14px;
+    color: #555;
+}
