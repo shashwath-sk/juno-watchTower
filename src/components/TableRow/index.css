@@ -1,0 +1,91 @@
+.risk-level{
+  content: '';
+  display: inline-block;
+  width: .5cm; 
+  height: .5cm; 
+  border-radius: 50%;
+  position: absolute;
+  left: 28%; 
+}
+
+.risk-level.medium{
+background-color: #a48b58;
+} 
+.risk-level.low{
+background-color: #74ac94;
+} 
+.risk-level.high{
+background-color: #7d2424;
+}
+
+.risk-level-color-medium{
+  color: #a48b58;
+  padding-left: 20px;  
+} 
+.risk-level-color-low{
+  color: #74ac94;
+  padding-left: 20px;  
+} 
+.risk-level-color-high{
+  color: #7d2424;
+  padding-left: 20px;  
+}
+
+.email-date-color {
+color: #999999;
+}
+
+.name-reason-days{
+  color: #4c4c4c;
+  font-weight: bold;
+}
+.issue-details{
+  border: 1px solid #e9e9e9;
+  height: 10vh;
+  position: relative;
+}
+  
+td {
+    padding-left: 10px; 
+    text-align: left;
+}
+  
+.userinfo {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding-top: 15px;
+}
+  
+.userinfo > div {
+  padding-top: 12px;
+}
+  
+.open-in-new-window {
+  height: 100%; 
+  padding-right: 30px;
+}
+  
+.overlay {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  padding: 6px, 12px, 6px, 12px;
+  border-radius: 4px;
+  gap: 11px;
+  background-color: white;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+
+.overlay div:hover {
+  background-color: #ededfe; 
+  color: #5856f0;
+}
